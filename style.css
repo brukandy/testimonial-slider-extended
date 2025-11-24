@@ -91,11 +91,21 @@ body {
     transform: translate(-50%, -50%);
     z-index: 2;
     pointer-events: none;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.video-overlay svg circle {
+    transition: fill 0.3s ease;
 }
 
 .testimonial-card:hover .video-overlay {
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-50%, -50%) scale(1.15);
+    opacity: 1;
+}
+
+.testimonial-card:hover .video-overlay svg circle {
+    fill: rgba(255,255,255,0.5);
 }
 
 .media-placeholder {
@@ -117,14 +127,20 @@ body {
     position: absolute;
     top: 12px;
     right: 12px;
-    background: rgba(255, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 4px 12px;
     border-radius: 6px;
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover .video-badge {
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .testimonial-card:hover .media-placeholder {
