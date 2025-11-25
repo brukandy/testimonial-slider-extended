@@ -1,6 +1,13 @@
-# 🎯 Testimonial Grid con Modal - Leone Master School
+# 🎯 Testimonial Slider - Leone Master School
 
-Componente testimonial con griglia di 4 card e popup modal per WordPress Elementor.
+Componente testimonial grid con modal popup, progettato in stile Mindvalley per Leone Master School.
+
+## 📌 Info Progetto
+
+- **Repository:** https://github.com/brukandy/testimonial-slider
+- **Live Demo:** https://brukandy.github.io/testimonial-slider/
+- **Account GitHub:** brukandy
+- **Progetto Locale:** `/Users/brunolorenzon/CascadeProjects/testimonial-slider/`
 
 ## 🚀 Live Demo
 
@@ -43,19 +50,43 @@ Componente testimonial con griglia di 4 card e popup modal per WordPress Element
 
 ### Metodo 1: Iframe Embed (Consigliato)
 
-1. Crea una nuova sezione in Elementor
-2. Aggiungi widget **HTML**
-3. Incolla questo codice:
+1. **Crea nuova sezione** in Elementor
+2. **Imposta sezione:**
+   - Layout → Content Width: **Full Width**
+   - Layout → Column Gap: **No Gap**
+   - Advanced → Padding: **0** su tutti i lati
+   - Advanced → Margin: **0** su tutti i lati
+
+3. **Aggiungi widget HTML**
+4. **Incolla questo codice:**
 
 ```html
+<style>
+/* Rimuove padding dal widget Elementor */
+.elementor-widget-html {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.elementor-widget-container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+</style>
+
 <iframe 
     src="https://brukandy.github.io/testimonial-slider/" 
     width="100%" 
     height="1200" 
     frameborder="0"
-    style="border: none; overflow: hidden;">
+    allowfullscreen
+    allow="fullscreen"
+    style="border: none; display: block; margin: 0; padding: 0;">
 </iframe>
 ```
+
+5. **Imposta widget HTML:**
+   - Advanced → Padding: **0** su tutti i lati
+   - Advanced → Margin: **0** su tutti i lati
 
 **Nota:** Altezza `1200px` per desktop, si adatta automaticamente su mobile.
 
@@ -67,39 +98,43 @@ Componente testimonial con griglia di 4 card e popup modal per WordPress Element
    - `href="https://brukandy.github.io/testimonial-slider/style.css"`
    - `src="https://brukandy.github.io/testimonial-slider/script.js"`
 
-## 🎬 Aggiungere Video e Foto Reali
+## 🎬 Media Integrati
 
-### Nel file `script.js`, modifica l'oggetto `testimonials`:
+### Video YouTube:
+- **Fabio:** https://www.youtube.com/watch?v=f3lBU52wDPQ
+- **Gilberto:** https://www.youtube.com/watch?v=pmbVLQppfgc
+
+### Immagini Locali:
+- **Fabio:** `images/fabio-testimonial.png`
+- **Gilberto:** `images/gilberto-tetimonial.png`
+- **Sandra:** `images/sandra-testimonial.png`
+- **Alice:** `images/alice-testimonial.png`
+
+### Come Aggiungere Nuovi Media
+
+Nel file `script.js`, modifica l'oggetto `testimonials`:
 
 ```javascript
 const testimonials = {
     fabio: {
         name: "Fabio",
-        role: "Imprenditore e Franchise Owner",
-        highlight: "Da 250.000 € a DECINE di milioni di euro",
         mediaType: "video",
-        mediaUrl: "https://tuodominio.com/video-fabio.mp4", // ← Aggiungi URL
+        mediaUrl: "https://www.youtube.com/embed/VIDEO_ID", // YouTube embed URL
+        thumbnailUrl: "images/fabio-testimonial.png", // Thumbnail card
         sections: [...]
     },
     alice: {
-        name: "Alice Grandcolas",
-        role: "Interior Designer",
-        highlight: "Da 1.100 € al mese a Hilton London",
+        name: "Alice",
         mediaType: "photo",
-        mediaUrl: "https://tuodominio.com/foto-alice.jpg", // ← Aggiungi URL
+        mediaUrl: "images/alice-testimonial.png", // Foto locale o URL
         sections: [...]
     }
 };
 ```
 
 ### Formati Supportati:
-- **Video:** MP4, WebM
+- **Video:** YouTube embed, MP4, WebM
 - **Foto:** JPG, PNG, WebP
-
-### Hosting Consigliato:
-- GitHub Pages (per immagini nel repo)
-- CDN esterno (Cloudinary, ImgIX)
-- WordPress Media Library
 
 ## 🎨 Personalizzazione
 
@@ -243,13 +278,44 @@ git push origin main
 - **Accessibilità:** Keyboard navigation (ESC per chiudere)
 - **Performance:** CSS animations con GPU acceleration
 - **SEO Friendly:** Semantic HTML5
+- **Scrollbar Custom:** Stile blu navy abbinato al design
+- **Mobile Slider:** Scroll orizzontale con snap su mobile (<768px)
+- **Video Fullscreen:** Supporto fullscreen per video YouTube
 
-## 📧 Prossimi Step
+## 🎯 Caratteristiche Implementate
 
-1. **Fornire URL video/foto** per sostituire placeholder
-2. **Testare su WordPress** con iframe embed
-3. **Ottimizzare altezza iframe** in base al contenuto
-4. **Deploy su GitHub Pages** per URL pubblico
+✅ **Griglia responsive** (4 col → 2 col → slider mobile)  
+✅ **Modal popup** con video YouTube e foto  
+✅ **Thumbnail reali** su tutte le card  
+✅ **Play button discreto** (bianco trasparente)  
+✅ **Badge video** (nero trasparente con blur)  
+✅ **Scrollbar personalizzata** (blu navy)  
+✅ **Mobile dots indicator** per navigazione  
+✅ **Fullscreen video** supportato  
+✅ **Deploy GitHub Pages** completato  
+✅ **Embed WordPress** testato e funzionante  
+
+## 🔄 Comandi Utili
+
+### Server Locale
+```bash
+cd /Users/brunolorenzon/CascadeProjects/testimonial-slider
+python3 -m http.server 8081
+# Apri: http://localhost:8081
+```
+
+### Git Push
+```bash
+git add .
+git commit -m "Update content"
+git push origin main
+# GitHub Pages si aggiorna in 1-2 minuti
+```
+
+### Creare Nuovo Repo GitHub
+```bash
+gh repo create brukandy/NOME-REPO --public --source=. --remote=origin --push
+```
 
 ## 📅 Versione
 
