@@ -76,7 +76,7 @@ Componente testimonial grid con modal popup, progettato in stile Mindvalley per 
 <iframe 
     src="https://brukandy.github.io/testimonial-slider/" 
     width="100%" 
-    height="1200" 
+    height="900" 
     frameborder="0"
     allowfullscreen
     allow="fullscreen"
@@ -88,7 +88,7 @@ Componente testimonial grid con modal popup, progettato in stile Mindvalley per 
    - Advanced → Padding: **0** su tutti i lati
    - Advanced → Margin: **0** su tutti i lati
 
-**Nota:** Altezza `1200px` per desktop, si adatta automaticamente su mobile.
+**Nota:** Altezza ottimizzata `900px` (aggiornata Nov 2025). Usa `1200px` se serve più spazio per il CTA button.
 
 ### Metodo 2: Codice Diretto
 
