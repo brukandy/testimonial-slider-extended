@@ -521,3 +521,42 @@ body {
         width: 100%;
     }
 }
+
+/* Mobile Landscape */
+@media (max-width: 926px) and (orientation: landscape) {
+    body {
+        padding: 40px 0 20px 0;
+    }
+    
+    .testimonial-header {
+        margin-bottom: 32px;
+    }
+    
+    .testimonial-title {
+        font-size: 28px;
+    }
+    
+    .testimonial-subtitle {
+        font-size: 14px;
+    }
+    
+    /* Grid 2 colonne per landscape */
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        overflow-x: visible;
+        scroll-snap-type: none;
+        padding: 0 20px;
+    }
+    
+    .testimonial-card {
+        min-width: auto;
+        max-width: none;
+        scroll-snap-align: none;
+    }
+    
+    .cards-grid::after {
+        display: none;
+    }
+}
