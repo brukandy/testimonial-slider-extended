@@ -540,11 +540,11 @@ body {
         font-size: 14px;
     }
     
-    /* Grid 2 colonne per landscape */
+    /* Grid 4 colonne per landscape - tutte sulla stessa riga */
     .cards-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
         overflow-x: visible;
         scroll-snap-type: none;
         padding: 0 20px;
@@ -554,6 +554,19 @@ body {
         min-width: auto;
         max-width: none;
         scroll-snap-align: none;
+        padding: 16px;
+    }
+    
+    .card-media {
+        aspect-ratio: 1;
+    }
+    
+    .card-name {
+        font-size: 14px;
+    }
+    
+    .card-role {
+        font-size: 12px;
     }
     
     .cards-grid::after {
