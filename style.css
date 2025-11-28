@@ -486,19 +486,8 @@ body {
         max-width: 75%;
         scroll-snap-align: center;
         flex-shrink: 0;
-        transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    }
-    
-    /* Subtle fade for cards not in center */
-    .testimonial-card:not(:first-child) {
-        opacity: 0.6;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    }
-    
-    /* Active/centered card gets full shadow */
-    .testimonial-card:first-child {
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
     }
     
     /* Show peek of next card */
