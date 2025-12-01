@@ -576,4 +576,8 @@ body {
     .cards-grid::after {
         display: none;
     }
+    
+    .cta-section {
+        margin-top: 32px;
+    }
 }
