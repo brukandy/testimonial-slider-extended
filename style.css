@@ -544,29 +544,32 @@ body {
     .cards-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
+        gap: 8px;
         overflow-x: visible;
         scroll-snap-type: none;
         padding: 0 20px;
+        max-width: 800px;
+        margin: 0 auto;
     }
     
     .testimonial-card {
         min-width: auto;
         max-width: none;
         scroll-snap-align: none;
-        padding: 16px;
+        padding: 12px;
     }
     
     .card-media {
         aspect-ratio: 1;
+        margin-bottom: 8px;
     }
     
     .card-name {
-        font-size: 14px;
+        font-size: 11px;
     }
     
     .card-role {
-        font-size: 12px;
+        font-size: 9px;
     }
     
     .cards-grid::after {
