@@ -443,12 +443,12 @@ body {
 
 @media (max-width: 768px) and (orientation: portrait) {
     body {
-        padding: 60px 0 20px 0;
+        padding: 40px 0 20px 0;
     }
     
     .testimonial-header {
         padding: 0 20px;
-        margin-bottom: 40px;
+        margin-bottom: 32px;
     }
     
     .testimonial-title {
@@ -468,7 +468,7 @@ body {
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         padding: 0 20px 20px 20px;
-        margin-bottom: 40px;
+        margin-bottom: 32px;
         -webkit-overflow-scrolling: touch;
     }
     
