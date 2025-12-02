@@ -100,6 +100,266 @@ const testimonials = {
                 text: "Tutto questo in soli dodici mesi di Programma e applicazione costante."
             }
         ]
+    },
+    roberto: {
+        name: "Roberto",
+        role: "Settore turistico – Provincia di Bolzano",
+        highlight: "2 aggiudicazioni immobiliari in 6 mesi",
+        mediaType: "video",
+        mediaUrl: "https://www.youtube.com/embed/x4mnP3TWMQk",
+        thumbnailUrl: "images/roberto.png",
+        sections: [
+            {
+                label: "Situazione di partenza",
+                text: "Roberto lavora nel settore turistico e negli affitti brevi. Pur non provenendo dal mondo immobiliare, decide di intraprendere il percorso REM con l'obiettivo di aggiudicarsi i suoi primi immobili all'asta."
+            },
+            {
+                label: "Intervento",
+                text: "Segue il programma con costanza per sei mesi, applicando la perseveranza e le strategie consigliate dai docenti. Studia il mercato, partecipa alle aste e mette in pratica ciò che apprende lezione dopo lezione."
+            },
+            {
+                label: "Risultato misurabile",
+                text: "Ottiene due risultati importanti in pochissimo tempo: <strong>Aprile: aggiudicazione di un garage (ROI stimato intorno al 28%)</strong>. <strong>17 giugno: aggiudicazione di un appartamento all'offerta minima, essendo l'unico partecipante (ROI previsto circa 38%)</strong>. Due operazioni immobiliari portate a casa in sei mesi, entrambe con ottime prospettive di rendimento."
+            },
+            {
+                label: "Tempo/Impegno",
+                text: "Il garage è stato saldato una settimana fa, mentre l'appartamento verrà saldato nei prossimi mesi per poi completare la rivendita nella primavera del prossimo anno."
+            }
+        ]
+    },
+    chiara: {
+        name: "Chiara Vesani",
+        role: "Architetto – Verona",
+        highlight: "Da zero competenze a piena consapevolezza del proprio mercato",
+        mediaType: "video",
+        mediaUrl: "https://www.youtube.com/embed/-3SXCseesAc",
+        thumbnailUrl: "images/chiara-vesani.png",
+        sections: [
+            {
+                label: "Situazione di partenza",
+                text: "Partiva da zero competenze di marketing e cercava maggiore consapevolezza per individuare la nicchia professionale in cui posizionarsi come architetto."
+            },
+            {
+                label: "Intervento",
+                text: "Intraprende il Master con dedizione, partecipando attivamente alle lezioni e ai canali della community. Si confronta regolarmente con i docenti e con gli altri studenti, trasformando il percorso in un vero lavoro di squadra."
+            },
+            {
+                label: "Risultato misurabile",
+                text: "Acquisisce chiarezza sulla propria direzione professionale e sviluppa una nuova consapevolezza sul mercato a cui rivolgersi. Si sente finalmente sulla strada giusta per raggiungere i suoi obiettivi."
+            },
+            {
+                label: "Tempo/Impegno",
+                text: "Il percorso è impegnativo ma arricchente. Sin dalle prime settimane percepisce miglioramenti concreti nelle sue competenze e nella visione strategica del suo futuro."
+            }
+        ]
+    },
+    armando: {
+        name: "Armando Giorgi",
+        role: "Docente di Digital Marketing e Imprenditore",
+        highlight: "+100% fatturato in 4 mesi",
+        mediaType: "video",
+        mediaUrl: "https://www.youtube.com/embed/N6dfrNPpUP4",
+        thumbnailUrl: "images/armando-giorgi.png",
+        sections: [
+            {
+                label: "Situazione di partenza",
+                text: "Docente di digital marketing e imprenditore, sentiva il bisogno di un percorso che potesse far emergere meglio le sue competenze e tradurle in risultati concreti, sia personali che professionali."
+            },
+            {
+                label: "Intervento",
+                text: "Inizia dal MAP e prosegue con altri percorsi, lavorando su mindset, leadership e trasformazione delle azioni quotidiane. Trova subito sintonia con l'ecosistema della scuola e con gli altri professionisti."
+            },
+            {
+                label: "Risultato misurabile",
+                text: "Nei primi quattro mesi vive una vera epifania: <strong>raddoppia il fatturato</strong> e ottiene miglioramenti tangibili nella gestione del lavoro e nella crescita personale."
+            },
+            {
+                label: "Tempo/Impegno",
+                text: "Risultati visibili già nelle prime settimane, consolidati nell'arco di quattro mesi applicando con costanza le strategie apprese."
+            }
+        ]
+    },
+    salvatore: {
+        name: "Salvatore Sgobbio",
+        role: "Direttore Tecnico Amministrativo – Grey Chemica All Srl",
+        highlight: "Diventa azienda leader del settore in Europa",
+        mediaType: "video",
+        mediaUrl: "https://www.youtube.com/embed/bHgNNyFFi-Q",
+        thumbnailUrl: "images/salvatore-sgobbio.png",
+        sections: [
+            {
+                label: "Situazione di partenza",
+                text: "Salvatore, direttore tecnico amministrativo in un'azienda chimica, riconosce quanto sarebbe stato diverso il suo percorso imprenditoriale se avesse avuto sin dall'inizio le informazioni corrette per prendere decisioni strategiche efficaci."
+            },
+            {
+                label: "Intervento",
+                text: "Partecipa ai programmi della Leone Master School e all'evento 'Io Creo il Mio Destino'. Trova un percorso strutturato che lo aiuta a migliorare la visione imprenditoriale, la gestione aziendale e la capacità di individuare ciò che davvero fa la differenza nel far crescere un'impresa."
+            },
+            {
+                label: "Risultato misurabile",
+                text: "Grazie alle informazioni acquisite nei programmi, applica nuove strategie che permettono all'azienda di <strong>posizionarsi come leader del settore in Europa</strong>. Definisce queste informazioni come vincenti, un reale punto di svolta per il suo modo di fare business."
+            },
+            {
+                label: "Tempo/Impegno",
+                text: "Applica costantemente ciò che apprende e sottolinea che, con queste informazioni, avrebbe fatto un decimo della fatica nel suo cammino imprenditoriale."
+            }
+        ]
+    },
+    gianluca: {
+        name: "Gianluca",
+        role: "Settore edilizio – Pisa",
+        highlight: "Team da 3 a 6 collaboratori e aumento del guadagno personale",
+        mediaType: "video",
+        mediaUrl: "https://www.youtube.com/embed/QV_VD7X4nU4",
+        thumbnailUrl: "images/gianluca.png",
+        sections: [
+            {
+                label: "Situazione di partenza",
+                text: "Gianluca lavora nel settore edilizio e sentiva la necessità di migliorare la gestione del denaro, sia personale che aziendale. Aveva bisogno di strategie pratiche per aumentare la liquidità e far crescere la sua attività."
+            },
+            {
+                label: "Intervento",
+                text: "Partecipa ai programmi della Leone Master School, dove apprende nuove strategie finanziarie e gestionali che applica immediatamente nel suo settore. Integra le informazioni ricevute nel suo lavoro quotidiano, migliorando processi, gestione economica e acquisizione clienti."
+            },
+            {
+                label: "Risultato misurabile",
+                text: "I risultati arrivano rapidamente: ottiene molti più contratti, grazie al nuovo approccio. Incrementa il suo guadagno personale. <strong>Fa crescere la sua azienda: da un team di 3 persone del nucleo familiare a 6 collaboratori totali</strong>, assumendo 3 nuove risorse. Gianluca definisce questo risultato un notevole successo sia a livello economico che professionale."
+            },
+            {
+                label: "Tempo/Impegno",
+                text: "Applica con costanza le strategie imparate, integrandole nella gestione quotidiana dell'azienda e ottenendo benefici tangibili nel breve periodo."
+            }
+        ]
+    },
+    regina: {
+        name: "Regina",
+        role: "Settore servizi",
+        highlight: "Fatturato 5X grazie ai sistemi di marketing",
+        mediaType: "video",
+        mediaUrl: "https://www.youtube.com/embed/41PsEZWOMJU",
+        thumbnailUrl: "images/regina.png",
+        sections: [
+            {
+                label: "Situazione di partenza",
+                text: "Regina aveva entrate mensili molto basse, tra 1.000 e 1.500 € lordi, che non le permettevano di avere stabilità economica. Sentiva il bisogno di strumenti di marketing e di negoziazione per far crescere la sua attività."
+            },
+            {
+                label: "Intervento",
+                text: "Partecipa ai programmi della Leone Master School, dove acquisisce informazioni fondamentali sulla pianificazione di marketing, sulla gestione del posizionamento e sulle strategie di negoziazione — proprio l'area che identificava come suo punto debole."
+            },
+            {
+                label: "Risultato misurabile",
+                text: "I risultati sono sorprendenti: <strong>il fatturato si quintuplica</strong>. Ottiene maggiore controllo della sua attività grazie ai sistemi di marketing appresi. Aumenta la sicurezza nella negoziazione e nella gestione dei clienti. Regina definisce questi risultati molto importanti, frutto dell'applicazione costante delle informazioni ricevute."
+            },
+            {
+                label: "Tempo/Impegno",
+                text: "Integra progressivamente le nuove strategie nella sua attività quotidiana, ottenendo miglioramenti tangibili in pochi mesi."
+            }
+        ]
+    },
+    jessica: {
+        name: "Jessica",
+        role: "Aspirante Coach Professionista",
+        highlight: "Più sicurezza e nuove opportunità lavorative",
+        mediaType: "video",
+        mediaUrl: "https://www.youtube.com/embed/iVtTW-tP6O4",
+        thumbnailUrl: "images/jessica.png",
+        sections: [
+            {
+                label: "Situazione di partenza",
+                text: "Jessica vuole crescere come coach professionista e sente il bisogno di un percorso che le dia maggiore sicurezza, competenze solide e nuove opportunità nel mondo del coaching."
+            },
+            {
+                label: "Intervento",
+                text: "Inizia il Master per sviluppare strumenti pratici, una visione più chiara del suo ruolo e la consapevolezza di ciò che può portare agli altri. Il percorso le permette di lavorare in profondità su sé stessa e sulle sue capacità di supporto e guida."
+            },
+            {
+                label: "Risultato misurabile",
+                text: "Acquisisce maggiore sicurezza nelle proprie abilità e nella direzione professionale che vuole intraprendere. Si sente più preparata, più consapevole e con prospettive lavorative reali e concrete nel coaching."
+            },
+            {
+                label: "Tempo/Impegno",
+                text: "Affronta il percorso in modo intenzionale, seguendo quello che sente davvero dentro. Consiglia il Master a chi desidera seriamente diventare coach e intraprendere un percorso trasformativo, personale e professionale."
+            }
+        ]
+    },
+    carmela: {
+        name: "Carmela Bondonno",
+        role: "Insegnante di matematica – Mamma di 3 figli",
+        highlight: "Dimagrire e alzare l'autostima",
+        mediaType: "video",
+        mediaUrl: "https://www.youtube.com/embed/PUbLRY1xzwI",
+        thumbnailUrl: "images/carmela-bondonno.png",
+        sections: [
+            {
+                label: "Situazione di partenza",
+                text: "Carmela, insegnante di matematica e mamma di tre figli, stava attraversando un periodo complesso sia economicamente che emotivamente. Proveniva da un matrimonio difficile che aveva compromesso profondamente la sua autostima."
+            },
+            {
+                label: "Intervento",
+                text: "Inizia i programmi della Leone Master School con l'obiettivo di rimettersi in forma, recuperare equilibrio e affrontare il momento delicato nel modo migliore possibile. Durante il percorso scopre nuove opportunità, nuove prospettive e una forza personale che non sapeva di avere."
+            },
+            {
+                label: "Risultato misurabile",
+                text: "<strong>Sta dimagrendo e migliorando la sua condizione fisica</strong>. Recupera autostima, energia e serenità. Riconosce di avere una forte predisposizione nell'aiutare gli altri e comprende di voler diventare mental coach, trasformando il suo percorso personale in una nuova opportunità professionale."
+            },
+            {
+                label: "Tempo/Impegno",
+                text: "Affronta il programma con costanza, mantenendo l'impegno nonostante le difficoltà. I risultati emotivi e fisici arrivano progressivamente, restituendole fiducia e direzione."
+            }
+        ]
+    },
+    ivan: {
+        name: "Ivan Pittelli",
+        role: "Imprenditore multiservizi – Cosenza",
+        highlight: "Migliorare l'organizzazione aziendale",
+        mediaType: "video",
+        mediaUrl: "https://www.youtube.com/embed/dqQs-a3Hxkc",
+        thumbnailUrl: "images/ivan-pittelli.png",
+        sections: [
+            {
+                label: "Situazione di partenza",
+                text: "Ivan, 40 anni, imprenditore di un'azienda multiservizi specializzata in comparazione di utenze e efficienza energetica, sentiva la necessità di fare un vero salto di qualità nella gestione della sua attività. L'organizzazione interna non era ottimizzata e spesso si ritrovava a fare tutto da solo."
+            },
+            {
+                label: "Intervento",
+                text: "Entra nei programmi della Leone Master School per apprendere un metodo chiaro, pratico e applicabile alla gestione aziendale. Durante il percorso comprende di aver finalmente trovato la scuola giusta, grazie a contenuti che definisce la ciliegina sulla torta. Lavora soprattutto su: organizzazione dell'azienda, gestione delle risorse, strutturazione dei processi."
+            },
+            {
+                label: "Risultato misurabile",
+                text: "Ivan vive una trasformazione significativa: <strong>impara a organizzare l'azienda</strong>, cosa che prima non riusciva a fare con continuità. Migliora la gestione dei processi interni. Acquisisce una mentalità più orientata all'azione e alla crescita. Riconosce che rimandare questo percorso significherebbe perdere tempo, soldi ed energie."
+            },
+            {
+                label: "Tempo/Impegno",
+                text: "Applica giorno dopo giorno ciò che apprende, ottenendo un miglioramento concreto nell'organizzazione aziendale e una maggiore chiarezza nel ruolo imprenditoriale."
+            }
+        ]
+    },
+    "maria-grazia": {
+        name: "Maria Grazia Di Filippo",
+        role: "Consulente in sostenibilità – Italia / Spagna",
+        highlight: "Migliora le collaborazioni internazionali",
+        mediaType: "video",
+        mediaUrl: "https://www.youtube.com/embed/G_G98bKwLa8",
+        thumbnailUrl: "images/maria-grazia-di-filippo.png",
+        sections: [
+            {
+                label: "Situazione di partenza",
+                text: "Maria Grazia, 48 anni, lavora da sempre nel settore della sostenibilità e dell'auditing con collaborazioni tra Spagna e Italia. Cercava un percorso che potenziasse ulteriormente le sue competenze, migliorasse la sua operatività internazionale e le permettesse di avere un affiancamento costante da professionisti esperti."
+            },
+            {
+                label: "Intervento",
+                text: "Decide di entrare nei programmi della Leone Master School dopo una chiamata chiarificatrice con Nora, che le indica il percorso più adatto ai suoi obiettivi. Nel Master ABM trova: tecniche pratiche immediatamente applicabili, affiancamento da docenti esperti, flessibilità nella formazione online, un supporto continuo per crescere con costanza."
+            },
+            {
+                label: "Risultato misurabile",
+                text: "Dopo quasi un anno all'interno della scuola, ottiene miglioramenti significativi: <strong>potenzia le sue collaborazioni internazionali tra Italia e Spagna</strong>. Acquisisce maggiore consapevolezza professionale e personale. Impara a trarre valore anche dai fallimenti. Cresce quotidianamente grazie al confronto con professionisti che hanno già realizzato percorsi simili."
+            },
+            {
+                label: "Tempo/Impegno",
+                text: "Lavora con costanza, perseveranza e obiettivi chiari. La trasformazione è progressiva ma solida, sostenuta dall'affiancamento diretto dei docenti."
+            }
+        ]
     }
 };
 
