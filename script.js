@@ -26,7 +26,7 @@ const testimonials = {
         ]
     },
     gilberto: {
-        name: "Gilberto Vespignani",
+        name: "Gilberto",
         role: "Imprenditore nel settore servizi",
         highlight: "Incremento del 150% in 12 mesi: da 600.000 € a 1,5 milioni",
         mediaType: "video",
@@ -52,7 +52,7 @@ const testimonials = {
         ]
     },
     sandra: {
-        name: "Sandra N.",
+        name: "Sandra",
         role: "Primo investimento immobiliare",
         highlight: "ROI del 30,64% - €64.000 di guadagno netto",
         mediaType: "photo",
@@ -77,7 +77,7 @@ const testimonials = {
         ]
     },
     alice: {
-        name: "Alice Grandcolas",
+        name: "Alice",
         role: "Interior Designer",
         highlight: "Da 1.100 € al mese a designer per Hilton London",
         mediaType: "photo",
@@ -128,7 +128,7 @@ const testimonials = {
         ]
     },
     chiara: {
-        name: "Chiara Vesani",
+        name: "Chiara",
         role: "Architetto – Verona",
         highlight: "Da zero competenze a piena consapevolezza del proprio mercato",
         mediaType: "video",
@@ -154,7 +154,7 @@ const testimonials = {
         ]
     },
     armando: {
-        name: "Armando Giorgi",
+        name: "Armando",
         role: "Docente di Digital Marketing e Imprenditore",
         highlight: "+100% fatturato in 4 mesi",
         mediaType: "video",
@@ -180,7 +180,7 @@ const testimonials = {
         ]
     },
     salvatore: {
-        name: "Salvatore Sgobbio",
+        name: "Salvatore",
         role: "Direttore Tecnico Amministrativo – Grey Chemica All Srl",
         highlight: "Diventa azienda leader del settore in Europa",
         mediaType: "video",
@@ -284,7 +284,7 @@ const testimonials = {
         ]
     },
     carmela: {
-        name: "Carmela Bondonno",
+        name: "Carmela",
         role: "Insegnante di matematica – Mamma di 3 figli",
         highlight: "Dimagrire e alzare l'autostima",
         mediaType: "video",
@@ -310,7 +310,7 @@ const testimonials = {
         ]
     },
     ivan: {
-        name: "Ivan Pittelli",
+        name: "Ivan",
         role: "Imprenditore multiservizi – Cosenza",
         highlight: "Migliorare l'organizzazione aziendale",
         mediaType: "video",
@@ -336,7 +336,7 @@ const testimonials = {
         ]
     },
     "maria-grazia": {
-        name: "Maria Grazia Di Filippo",
+        name: "Maria Grazia",
         role: "Consulente in sostenibilità – Italia / Spagna",
         highlight: "Migliora le collaborazioni internazionali",
         mediaType: "video",
