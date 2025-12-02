@@ -167,7 +167,7 @@ const testimonials = {
             },
             {
                 label: "Intervento",
-                text: "Inizia dal MAP e prosegue con altri percorsi, lavorando su mindset, leadership e trasformazione delle azioni quotidiane. Trova subito sintonia con l'ecosistema della scuola e con gli altri professionisti."
+                text: "Inizia dal MEP e prosegue con altri percorsi, lavorando su mindset, leadership e trasformazione delle azioni quotidiane. Trova subito sintonia con l'ecosistema della scuola e con gli altri professionisti."
             },
             {
                 label: "Risultato misurabile",
