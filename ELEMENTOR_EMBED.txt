@@ -1,0 +1,74 @@
+CODICE PER ELEMENTOR - TESTIMONIAL SLIDER EXTENDED
+==================================================
+
+Copia e incolla in un widget HTML di Elementor:
+
+<style>
+/* Reset padding Elementor */
+.elementor-widget-html {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.elementor-widget-container {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Iframe responsive wrapper */
+.testimonial-slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 1200px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .testimonial-slider-wrapper {
+        height: 1800px !important;
+    }
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+    .testimonial-slider-wrapper {
+        height: 1600px !important;
+    }
+}
+</style>
+
+<div class="testimonial-slider-wrapper">
+    <iframe 
+        src="https://brukandy.github.io/testimonial-slider-extended/" 
+        width="100%" 
+        height="100%" 
+        frameborder="0"
+        scrolling="no"
+        style="border: none; display: block; margin: 0; padding: 0; overflow: hidden;">
+    </iframe>
+</div>
+
+<script>
+// Auto-resize iframe based on content
+window.addEventListener('message', function(e) {
+    if (e.data.testimonialHeight) {
+        const iframe = document.querySelector('iframe[src*="testimonial-slider-extended"]');
+        if (iframe) {
+            iframe.style.height = e.data.testimonialHeight + 'px';
+        }
+    }
+});
+</script>
+
+---
+
+URL GITHUB PAGES: https://brukandy.github.io/testimonial-slider-extended/
+
+ALTEZZE:
+- Desktop: 1200px (auto-resize via postMessage)
+- Mobile Portrait (768px): 1800px
+- Mobile Small (480px): 1600px
+
+FEATURES:
+- Scroll orizzontale su tutte le risoluzioni
+- 14 testimonianze totali
+- Modal full screen su mobile portrait
+- Video YouTube embed nei modal
