@@ -545,7 +545,15 @@ body {
     .modal-close {
         top: 16px;
         right: 16px;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.8) !important;
+        border: 2px solid rgba(255, 255, 255, 0.4) !important;
+        width: 44px !important;
+        height: 44px !important;
+    }
+    
+    .modal-close svg {
+        stroke: #ffffff !important;
+        stroke-width: 3 !important;
     }
     
     .modal-header {
