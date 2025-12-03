@@ -337,11 +337,13 @@ body {
     visibility: hidden;
     transition: all 0.3s ease;
     padding: 20px;
+    pointer-events: none;
 }
 
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
 }
 
 .modal-container {
@@ -351,6 +353,7 @@ body {
     width: 100%;
     max-height: 85vh;
     overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
@@ -358,6 +361,8 @@ body {
     transition: transform 0.3s ease;
     overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
+    pointer-events: auto;
+    touch-action: pan-y;
 }
 
 .modal-overlay.active .modal-container {
@@ -379,6 +384,8 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 10;
+    pointer-events: auto;
+    touch-action: auto;
 }
 
 .modal-close:hover {
@@ -550,6 +557,8 @@ body {
         height: 100% !important;
         overflow-y: auto !important;
         -webkit-overflow-scrolling: touch;
+        touch-action: pan-y !important;
+        pointer-events: auto !important;
     }
     
     .modal-close {
@@ -562,6 +571,9 @@ body {
         height: 50px !important;
         z-index: 1000000 !important;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+        pointer-events: auto !important;
+        touch-action: auto !important;
+        cursor: pointer !important;
     }
     
     .modal-close svg {
@@ -569,6 +581,7 @@ body {
         stroke-width: 3 !important;
         width: 22px !important;
         height: 22px !important;
+        pointer-events: none !important;
     }
     
     .modal-header {
