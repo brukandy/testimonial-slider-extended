@@ -24,13 +24,13 @@ Copia e incolla in un widget HTML di Elementor:
 
 @media (max-width: 768px) and (orientation: portrait) {
     .testimonial-slider-wrapper {
-        height: 1800px !important;
+        height: 1400px !important;
     }
 }
 
 @media (max-width: 480px) and (orientation: portrait) {
     .testimonial-slider-wrapper {
-        height: 1600px !important;
+        height: 1100px !important;
     }
 }
 </style>
@@ -56,21 +56,31 @@ window.addEventListener('message', function(e) {
         }
     }
     
-    // Lock/unlock scroll when modal opens/closes
+    // Lock/unlock scroll when modal opens/closes (SAFE version)
     if (e.data.action === 'lockScroll') {
-        document.body.style.overflow = 'hidden';
-        document.body.style.position = 'fixed';
-        document.body.style.width = '100%';
-        document.body.style.top = `-${window.pageYOffset}px`;
+        // Solo se non è già bloccato da qualcos'altro
+        if (!document.body.dataset.scrollLocked) {
+            document.body.dataset.scrollLocked = 'true';
+            document.body.dataset.scrollPosition = window.pageYOffset;
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+            document.body.style.width = '100%';
+            document.body.style.top = `-${window.pageYOffset}px`;
+        }
     }
     
     if (e.data.action === 'unlockScroll') {
-        const scrollY = document.body.style.top;
-        document.body.style.overflow = '';
-        document.body.style.position = '';
-        document.body.style.width = '';
-        document.body.style.top = '';
-        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        // Solo se l'abbiamo bloccato noi
+        if (document.body.dataset.scrollLocked === 'true') {
+            const scrollY = document.body.dataset.scrollPosition || 0;
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+            document.body.style.width = '';
+            document.body.style.top = '';
+            delete document.body.dataset.scrollLocked;
+            delete document.body.dataset.scrollPosition;
+            window.scrollTo(0, parseInt(scrollY));
+        }
     }
 });
 </script>
