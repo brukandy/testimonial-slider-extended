@@ -42,7 +42,8 @@ Copia e incolla in un widget HTML di Elementor:
         height="100%" 
         frameborder="0"
         scrolling="no"
-        style="border: none; display: block; margin: 0; padding: 0; overflow: hidden;">
+        allow="touch"
+        style="border: none; display: block; margin: 0; padding: 0; overflow: hidden; touch-action: auto;">
     </iframe>
 </div>
 
