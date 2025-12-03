@@ -294,25 +294,31 @@ body {
 }
 
 .mobile-dots {
-    display: none;
+    display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     padding: 0 20px;
 }
 
 .mobile-dot {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.mobile-dot:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.2);
 }
 
 .mobile-dot.active {
     background: #ffffff;
-    width: 24px;
-    border-radius: 4px;
+    width: 28px;
+    border-radius: 5px;
 }
 
 .modal-overlay {
@@ -326,7 +332,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 999999;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
@@ -524,44 +530,45 @@ body {
         margin: 0 20px;
     }
     
-    .mobile-dots {
-        display: flex;
-    }
-    
     /* MODAL FULL SCREEN SU MOBILE PORTRAIT */
     .modal-overlay {
-        padding: 0;
+        padding: 0 !important;
+        align-items: stretch !important;
     }
     
     .modal-container {
-        max-width: 100%;
-        max-height: 100vh;
-        border-radius: 0;
-        height: 100vh;
+        max-width: 100% !important;
+        max-height: 100vh !important;
+        border-radius: 0 !important;
+        height: 100vh !important;
+        width: 100% !important;
+        margin: 0 !important;
     }
     
     .modal-content {
-        padding: 60px 24px 32px 24px;
-        height: 100%;
-        overflow-y: auto;
+        padding: 70px 20px 40px 20px !important;
+        height: 100% !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
     }
     
     .modal-close {
         position: fixed !important;
         top: 16px;
         right: 16px;
-        background: rgba(0, 0, 0, 0.9) !important;
-        border: 2px solid rgba(255, 255, 255, 0.5) !important;
-        width: 48px !important;
-        height: 48px !important;
-        z-index: 1001 !important;
+        background: rgba(0, 0, 0, 0.95) !important;
+        border: 2px solid rgba(255, 255, 255, 0.6) !important;
+        width: 50px !important;
+        height: 50px !important;
+        z-index: 1000000 !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
     }
     
     .modal-close svg {
         stroke: #ffffff !important;
         stroke-width: 3 !important;
-        width: 20px;
-        height: 20px;
+        width: 22px !important;
+        height: 22px !important;
     }
     
     .modal-header {

@@ -395,6 +395,13 @@ document.addEventListener('DOMContentLoaded', function() {
     if (cardsGrid && mobileDots.length > 0) {
         cardsGrid.addEventListener('scroll', updateMobileDots);
         updateMobileDots(); // Initial update
+        
+        // Add click listeners to dots
+        mobileDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                scrollToCard(index);
+            });
+        });
     }
 });
 
@@ -410,6 +417,19 @@ function updateMobileDots() {
         } else {
             dot.classList.remove('active');
         }
+    });
+}
+
+function scrollToCard(index) {
+    if (!cards[index]) return;
+    
+    const cardWidth = cards[0].offsetWidth;
+    const gap = 16; // Same as CSS gap
+    const scrollPosition = index * (cardWidth + gap);
+    
+    cardsGrid.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
     });
 }
 
