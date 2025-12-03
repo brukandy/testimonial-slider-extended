@@ -460,6 +460,11 @@ function openModal(testimonialId) {
     document.body.style.position = 'fixed';
     document.body.style.top = `-${scrollPosition}px`;
     document.body.style.width = '100%';
+    
+    // Tell parent window (Elementor) to lock scroll
+    if (window.parent !== window) {
+        window.parent.postMessage({ action: 'lockScroll' }, '*');
+    }
 
     let mediaHTML = '';
     if (data.mediaType === 'video') {
@@ -549,4 +554,9 @@ function closeModal() {
     document.body.style.top = '';
     document.body.style.width = '';
     window.scrollTo(0, scrollPosition);
+    
+    // Tell parent window (Elementor) to unlock scroll
+    if (window.parent !== window) {
+        window.parent.postMessage({ action: 'unlockScroll' }, '*');
+    }
 }
