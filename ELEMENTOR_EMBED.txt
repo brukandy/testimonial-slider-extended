@@ -71,5 +71,7 @@ ALTEZZE:
 FEATURES:
 - Scroll orizzontale su tutte le risoluzioni
 - 14 testimonianze totali
-- Modal full screen su mobile portrait
+- Modal con padding laterale su mobile (scroll pagina ai lati)
+- Close button sempre visibile
 - Video YouTube embed nei modal
+- Performance ottimizzate per mobile
