@@ -384,6 +384,13 @@ document.addEventListener('DOMContentLoaded', function() {
             closeModal();
         }
     });
+    
+    // Prevent scroll on modal overlay
+    modalOverlay.addEventListener('touchmove', function(e) {
+        if (e.target === modalOverlay) {
+            e.preventDefault();
+        }
+    }, { passive: false });
 
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
@@ -442,6 +449,13 @@ function openModal(testimonialId) {
 
     // Lock body scroll and save position
     scrollPosition = window.pageYOffset;
+    
+    // On mobile, scroll to top first
+    if (window.innerWidth <= 768) {
+        window.scrollTo(0, 0);
+        scrollPosition = 0;
+    }
+    
     document.body.style.overflow = 'hidden';
     document.body.style.position = 'fixed';
     document.body.style.top = `-${scrollPosition}px`;
@@ -516,6 +530,14 @@ function openModal(testimonialId) {
     `;
 
     modalOverlay.classList.add('active');
+    
+    // Scroll modal to top
+    setTimeout(() => {
+        const modalContainer = document.querySelector('.modal-container');
+        if (modalContainer) {
+            modalContainer.scrollTop = 0;
+        }
+    }, 50);
 }
 
 function closeModal() {
