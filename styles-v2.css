@@ -327,17 +327,17 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 999999;
+    z-index: 10000;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
     padding: 20px;
     pointer-events: none;
+    will-change: opacity, visibility;
 }
 
 .modal-overlay.active {
@@ -363,6 +363,7 @@ body {
     -webkit-overflow-scrolling: touch;
     pointer-events: auto;
     touch-action: pan-y;
+    will-change: transform;
 }
 
 .modal-overlay.active .modal-container {
@@ -544,48 +545,48 @@ body {
     }
     
     .modal-container {
-        max-width: 100% !important;
-        max-height: 100vh !important;
-        border-radius: 0 !important;
-        height: 100vh !important;
-        width: 100% !important;
-        margin: 0 !important;
-        overflow-y: auto !important;
-        overflow-x: hidden !important;
-        -webkit-overflow-scrolling: touch !important;
-        touch-action: pan-y !important;
-        pointer-events: auto !important;
+        max-width: 100%;
+        max-height: 100vh;
+        border-radius: 0;
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        touch-action: pan-y;
+        pointer-events: auto;
     }
     
     .modal-content {
-        padding: 70px 20px 40px 20px !important;
-        height: auto !important;
-        min-height: 100% !important;
-        overflow-y: visible !important;
-        pointer-events: auto !important;
+        padding: 70px 20px 40px 20px;
+        height: auto;
+        min-height: 100%;
+        overflow-y: visible;
+        pointer-events: auto;
     }
     
     .modal-close {
-        position: fixed !important;
+        position: fixed;
         top: 16px;
         right: 16px;
-        background: rgba(0, 0, 0, 0.95) !important;
-        border: 2px solid rgba(255, 255, 255, 0.6) !important;
-        width: 50px !important;
-        height: 50px !important;
-        z-index: 1000000 !important;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
-        pointer-events: auto !important;
-        touch-action: auto !important;
-        cursor: pointer !important;
+        background: rgba(0, 0, 0, 0.95);
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        pointer-events: auto;
+        touch-action: manipulation;
+        cursor: pointer;
     }
     
     .modal-close svg {
-        stroke: #ffffff !important;
-        stroke-width: 3 !important;
-        width: 22px !important;
-        height: 22px !important;
-        pointer-events: none !important;
+        stroke: #ffffff;
+        stroke-width: 3;
+        width: 22px;
+        height: 22px;
+        pointer-events: none;
     }
     
     .modal-header {
