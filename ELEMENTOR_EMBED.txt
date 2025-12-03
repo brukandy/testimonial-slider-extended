@@ -55,33 +55,6 @@ window.addEventListener('message', function(e) {
             iframe.style.height = e.data.testimonialHeight + 'px';
         }
     }
-    
-    // Lock/unlock scroll when modal opens/closes (SAFE version)
-    if (e.data.action === 'lockScroll') {
-        // Solo se non è già bloccato da qualcos'altro
-        if (!document.body.dataset.scrollLocked) {
-            document.body.dataset.scrollLocked = 'true';
-            document.body.dataset.scrollPosition = window.pageYOffset;
-            document.body.style.overflow = 'hidden';
-            document.body.style.position = 'fixed';
-            document.body.style.width = '100%';
-            document.body.style.top = `-${window.pageYOffset}px`;
-        }
-    }
-    
-    if (e.data.action === 'unlockScroll') {
-        // Solo se l'abbiamo bloccato noi
-        if (document.body.dataset.scrollLocked === 'true') {
-            const scrollY = document.body.dataset.scrollPosition || 0;
-            document.body.style.overflow = '';
-            document.body.style.position = '';
-            document.body.style.width = '';
-            document.body.style.top = '';
-            delete document.body.dataset.scrollLocked;
-            delete document.body.dataset.scrollPosition;
-            window.scrollTo(0, parseInt(scrollY));
-        }
-    }
 });
 </script>
 
@@ -91,8 +64,8 @@ URL GITHUB PAGES: https://brukandy.github.io/testimonial-slider-extended/
 
 ALTEZZE:
 - Desktop: 1200px (auto-resize via postMessage)
-- Mobile Portrait (768px): 1800px
-- Mobile Small (480px): 1600px
+- Mobile Portrait (768px): 1400px
+- Mobile Small (480px): 1100px
 
 FEATURES:
 - Scroll orizzontale su tutte le risoluzioni

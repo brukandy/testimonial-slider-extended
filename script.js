@@ -384,13 +384,6 @@ document.addEventListener('DOMContentLoaded', function() {
             closeModal();
         }
     });
-    
-    // Prevent scroll on modal overlay
-    modalOverlay.addEventListener('touchmove', function(e) {
-        if (e.target === modalOverlay) {
-            e.preventDefault();
-        }
-    }, { passive: false });
 
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
@@ -440,24 +433,9 @@ function scrollToCard(index) {
     });
 }
 
-// Store scroll position for iOS
-let scrollPosition = 0;
-
 function openModal(testimonialId) {
     const data = testimonials[testimonialId];
     if (!data) return;
-
-    // Lock body scroll and save position
-    scrollPosition = window.pageYOffset;
-    document.body.style.overflow = 'hidden';
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${scrollPosition}px`;
-    document.body.style.width = '100%';
-    
-    // Tell parent window (Elementor) to lock scroll
-    if (window.parent !== window) {
-        window.parent.postMessage({ action: 'lockScroll' }, '*');
-    }
 
     let mediaHTML = '';
     if (data.mediaType === 'video') {
@@ -540,16 +518,4 @@ function openModal(testimonialId) {
 
 function closeModal() {
     modalOverlay.classList.remove('active');
-    
-    // Restore body scroll and position
-    document.body.style.overflow = '';
-    document.body.style.position = '';
-    document.body.style.top = '';
-    document.body.style.width = '';
-    window.scrollTo(0, scrollPosition);
-    
-    // Tell parent window (Elementor) to unlock scroll
-    if (window.parent !== window) {
-        window.parent.postMessage({ action: 'unlockScroll' }, '*');
-    }
 }
