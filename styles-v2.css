@@ -350,6 +350,8 @@ body {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
     transform: scale(0.9);
     transition: transform 0.3s ease;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
 }
 
 .modal-overlay.active .modal-container {
@@ -380,6 +382,8 @@ body {
 
 .modal-content {
     padding: 48px;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
 }
 
 .modal-header {
@@ -543,17 +547,21 @@ body {
     }
     
     .modal-close {
+        position: fixed !important;
         top: 16px;
         right: 16px;
-        background: rgba(0, 0, 0, 0.8) !important;
-        border: 2px solid rgba(255, 255, 255, 0.4) !important;
-        width: 44px !important;
-        height: 44px !important;
+        background: rgba(0, 0, 0, 0.9) !important;
+        border: 2px solid rgba(255, 255, 255, 0.5) !important;
+        width: 48px !important;
+        height: 48px !important;
+        z-index: 1001 !important;
     }
     
     .modal-close svg {
         stroke: #ffffff !important;
         stroke-width: 3 !important;
+        width: 20px;
+        height: 20px;
     }
     
     .modal-header {

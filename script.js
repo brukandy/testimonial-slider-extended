@@ -413,9 +413,19 @@ function updateMobileDots() {
     });
 }
 
+// Store scroll position for iOS
+let scrollPosition = 0;
+
 function openModal(testimonialId) {
     const data = testimonials[testimonialId];
     if (!data) return;
+
+    // Lock body scroll and save position
+    scrollPosition = window.pageYOffset;
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.style.width = '100%';
 
     let mediaHTML = '';
     if (data.mediaType === 'video') {
@@ -486,10 +496,15 @@ function openModal(testimonialId) {
     `;
 
     modalOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
     modalOverlay.classList.remove('active');
+    
+    // Restore body scroll and position
     document.body.style.overflow = '';
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0, scrollPosition);
 }
